@@ -1,13 +1,26 @@
-Consider this a Add-On Release since I have only modified the original code to add RP potential.  90% of this script is still
-the original author's script with 10% my addition to make players get out and collect bags for RP potential.
+This is a the next step in my Garbagejob_v2 to turn it into a Crew related job.  Most servers you can rob a bank with 1 - 4 people, rob a store with 1-4 people, but any legal work must be done solo.  This shows it can be done - with the pay split between everyone that is doing the job.  I have spent a fair bit of time testing the networking on my personal test server, on a live dev server with 2-3 people helping me, and as of the last 12hrs live on 2 seperate servers.
+
+To help with some of the questions:
+  * Only the "JobBoss" needs to pull out vehicle - but everyone needs to be clocked-in to recieve pay. (must have garbagejob as your job and be clocked in from the biffa site at the top of the stairs.
+  * All crew members must be in the truck when the driver selects the bin for pickup (either in passangerseat - on hanging on the back of the truck is considered in the truck)
+  * Each member will recieve even split of pay right after the JobBoss gets back into the truck after cleanup.
+
 
 The original creator is listed on the copy that I recieved are:
 
 
 -- ORIGINAL SCRIPT BY Marcio FOR CFX-ESX
 
+Changes to my version of script:
 
-Changes to the script:
+* added: 1 - 4 people can work the same job.
+* added: Pay is sent after every pickup (incase driver disconnects)
+* added: Pay is split even between anyone on the truck when bin selection is made. (stay on truck till driver honks/sets red ring)
+* added: Changed the draw location of the back of the trunk to use platelight.(even if vehicle is blown up still finds the platelight)
+* added: 
+
+
+Changes to the orginal script:
 
 * added: bag collection to each destination. (driver will have to get out to collect bags from trash bin.)
 * added: pay per bag - the more you do the more you earn.
@@ -21,8 +34,9 @@ ESX_Jobs
 
   
 -- Install --
-  
-  Import garbagejob_v2.sql if you do not already have the garbagejob on your server for work clothes settings.
-  add esx_garbagecrew to your resource folder
-  start esx_garbagejobcrew in your server.fg
+
+* Import garbagejob_v2.sql if you do not already have the garbagejob on your server for work clothes settings.
+* add esx_garbagecrew to your resource folder.
+* start esx_garbagejobcrew in your server.fg
+
       
