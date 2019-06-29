@@ -35,7 +35,3 @@ ESX_Jobs
 * add esx_garbagecrew to your resource folder.
 * start esx_garbagejobcrew in your server.fg
 
-
-Any questions about the additions I have made to this ill be more then happy to answer… If you have questions or issues with the rest of the script I can try to answer but might not be able to help.
-
-SpikE
